@@ -10,11 +10,11 @@ import com.twilio.type.PhoneNumber;
 @Component
 public class SmsService {
 
-	private final String ACCOUNT_SID = "ACfad57eca5f59a6d3e4407035f8e695d8";
+	private final String ACCOUNT_SID = "Enter your SID Number from Twilio";
 
-	private final String AUTH_TOKEN = "c29b7c1791442d5778ac4509efd01fa1";
+	private final String AUTH_TOKEN = "Enter your Auth token from Twilio Account";
 
-	private final String FROM_NUMBER = "+15677496675";
+	private final String FROM_NUMBER = "Enter the phone number generated from Twilio";
 
 	public void send(SmsPojo sms) {
 		Twilio.init(ACCOUNT_SID, AUTH_TOKEN);
